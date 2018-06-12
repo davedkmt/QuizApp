@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!--User name input-->
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <!--Ready to start-->
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show"
+            android:textSize="16sp" />
+
+
+        <!--horizontal line ?-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <!--First question-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first" />
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstRadioButtonClicked"
+                android:text="@string/Poodle" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstRadioButtonClicked"
+                android:text="@string/Pomeranian" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstRadioButtonClicked"
+                android:text="@string/Dachshund" />
+
+            <RadioButton
+                android:id="@+id/radiofirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="firstRadioButtonClicked"
+                android:text="@string/Chihuahua" />
+        </RadioGroup>
+
+        <!--Second question-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/second" />
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondRadioButtonClicked"
+                android:text="@string/zebra1" />
+
+            <RadioButton
+                android:id="@+id/radiosecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondRadioButtonClicked"
+                android:text="@string/zebra2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondRadioButtonClicked"
+                android:text="@string/zebra3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondRadioButtonClicked"
+                android:text="@string/zebra4" />
+        </RadioGroup>
+
+        <!--Third question-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/third" />
+
+        <RadioGroup
+            android:id="@+id/group3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radiothird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdRadioButtonClicked"
+                android:text="@string/Albatross" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdRadioButtonClicked"
+                android:text="@string/Stork" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdRadioButtonClicked"
+                android:text="@string/Swan" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdRadioButtonClicked"
+                android:text="@string/Condor" />
+        </RadioGroup>
+
+        <!--Fourth question-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fourth" />
+
+        <RadioGroup
+            android:id="@+id/group4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fourthRadioButtonClicked"
+                android:text="@string/africanelephant" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fourthRadioButtonClicked"
+                android:text="@string/hippo" />
+
+            <RadioButton
+                android:id="@+id/radiofourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fourthRadioButtonClicked"
+                android:text="@string/bluewhale" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fourthRadioButtonClicked"
+                android:text="@string/dolphin" />
+        </RadioGroup>
+
+        <!--Fifth question-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fifth" />
+
+        <RadioGroup
+            android:id="@+id/group5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fifthRadioButtonClicked"
+                android:text="@string/birds" />
+
+            <RadioButton
+                android:id="@+id/radiofifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fifthRadioButtonClicked"
+                android:text="@string/dogs" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fifthRadioButtonClicked"
+                android:text="@string/cats" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fifthRadioButtonClicked"
+                android:text="@string/horses" />
+        </RadioGroup>
+
+        <!--horizontal line ?-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <!--Submit button-->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submitResult"
+            android:text="@string/submit" />
+
+        <!--Reset Button-->
+
+        <Button
+            android:id="@+id/resetbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="@string/resetbutton" />
+
+    </LinearLayout>
+
+
+</ScrollView>
